@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network+ Exam Guide</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00FF00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #00FF00;
+            background-color: #000000;
+        }
+        h1, h2 {
+            color: #00FF00;
+            text-align: center;
+        }
+        h3 {
+            color: #00FF00;
+            text-decoration: underline;
+        }
+        p {
+            line-height: 1.6;
+        }
+        a {
+            color: #00FF00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        nav {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CompTIA Network+ Exam Guide</h1>
+        <nav>
+            <a href="#networking-fundamentals">Networking Fundamentals</a>
+            <a href="#network-implementations">Network Implementations</a>
+            <a href="#network-operations">Network Operations</a>
+            <a href="#network-security">Network Security</a>
+            <a href="#network-troubleshooting">Network Troubleshooting</a>
+        </nav>
+
+        <section id="networking-fundamentals">
+            <h2>1. Networking Fundamentals</h2>
+            <h3>Networking Models:</h3>
+            <p> 
+                - OSI Model: A seven-layer model that helps understand how network protocols interact (Physical, Data Link, Network, Transport, Session, Presentation, Application). <br>
+                - TCP/IP Model: A four-layer model commonly used in practical networking (Network Interface, Internet, Transport, Application).
+            </p>
+            <h3>Networking Devices:</h3>
+            <p>
+                - Router: Directs traffic between networks.<br>
+                - Switch: Connects devices within a network and forwards data based on MAC addresses.<br>
+                - Access Point (AP): Provides wireless connectivity within a network.
+            </p>
+            <h3>IP Addressing:</h3>
+            <p>
+                - IPv4 and IPv6 addressing schemes.<br>
+                - Subnetting: Breaking a network into smaller, manageable pieces.<br>
+                - Public vs. Private IP addresses, NAT (Network Address Translation).
+            </p>
+            <h3>Common Protocols:</h3>
+            <p>
+                - TCP (Transmission Control Protocol): Ensures reliable communication.<br>
+                - UDP (User Datagram Protocol): Fast but less reliable communication.<br>
+                - DNS (Domain Name System): Translates domain names into IP addresses.<br>
+                - DHCP (Dynamic Host Configuration Protocol): Automatically assigns IP addresses to devices.
+            </p>
+        </section>
+
+        <section id="network-implementations">
+            <h2>2. Network Implementations</h2>
+            <h3>Networking Topologies:</h3>
+            <p>
+                - Bus, Star, Mesh, and Hybrid topologies.<br>
+                - Wired (Ethernet) vs. Wireless topologies.
+            </p>
+            <h3>Network Types:</h3>
+            <p>
+                - LAN (Local Area Network): Small network, typically within a single location.<br>
+                - WAN (Wide Area Network): Larger network that spans geographical locations.<br>
+                - VLANs (Virtual LANs): Allow segmentation of a network into smaller, isolated parts.
+            </p>
+            <h3>Networking Devices:</h3>
+            <p>
+                - Routers, switches, firewalls, load balancers, and proxy servers.<br>
+                - Wireless access points and their configuration (SSID, security protocols).
+            </p>
+            <h3>Wireless Networking:</h3>
+            <p>
+                - Wi-Fi standards (802.11a/b/g/n/ac/ax).<br>
+                - Wireless security (WPA2, WPA3).<br>
+                - Frequency bands (2.4 GHz vs. 5 GHz).
+            </p>
+            <h3>Cabling:</h3>
+            <p>
+                - Copper (e.g., Cat5e, Cat6) vs. Fiber (e.g., single-mode, multi-mode).<br>
+                - Connectors (RJ45, SC, LC).<br>
+                - Signal interference and cable management best practices.
+            </p>
+        </section>
+
+        <section id="network-operations">
+            <h2>3. Network Operations</h2>
+            <h3>Monitoring and Management:</h3>
+            <p>
+                - SNMP (Simple Network Management Protocol): Used for monitoring network devices.<br>
+                - Syslog: Centralized logging of events from network devices.<br>
+                - NMS (Network Management Systems): Tools used to monitor and manage large networks.
+            </p>
+            <h3>Network Documentation:</h3>
+            <p>
+                - Importance of keeping accurate network diagrams, configuration documentation, and performance logs.
+            </p>
+            <h3>Performance Metrics:</h3>
+            <p>
+                - Latency, bandwidth, throughput, and jitter.<br>
+                - Understanding QoS (Quality of Service) to prioritize critical traffic.
+            </p>
+            <h3>Network Policies:</h3>
+            <p>
+                - Role of SLAs (Service Level Agreements) in setting uptime and performance expectations.<br>
+                - Incident response and change management processes.
+            </p>
+        </section>
+
+        <section id="network-security">
+            <h2>4. Network Security</h2>
+            <h3>Device Security:</h3>
+            <p>
+                - Firewalls: Filter incoming and outgoing traffic.<br>
+                - Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS).<br>
+                - VPNs (Virtual Private Networks): Secure connections over the internet.
+            </p>
+            <h3>Authentication and Access Control:</h3>
+            <p>
+                - AAA (Authentication, Authorization, Accounting) frameworks.<br>
+                - Multifactor authentication (MFA) and RADIUS/TACACS+ protocols.<br>
+                - Role-based access control (RBAC).
+            </p>
+            <h3>Encryption:</h3>
+            <p>
+                - Symmetric vs. asymmetric encryption.<br>
+                - Encryption protocols such as SSL/TLS, IPSec.<br>
+                - Wi-Fi security (WPA2, WPA3).
+            </p>
+            <h3>Common Threats:</h3>
+            <p>
+                - Malware, DDoS attacks, phishing, and man-in-the-middle attacks.<br>
+                - Mitigation strategies: firewalls, antivirus, patch management.
+            </p>
+        </section>
+
+        <section id="network-troubleshooting">
+            <h2>5. Network Troubleshooting</h2>
+            <h3>Troubleshooting Methodologies:</h3>
+            <p>
+                - Identify the problem, establish a theory, test the theory, establish a plan, implement the solution, verify functionality, and document the process.
+            </p>
+            <h3>Common Networking Problems:</h3>
+            <p>
+                - IP addressing issues (e.g., duplicate IP addresses, subnetting errors).<br>
+                - Hardware failures (e.g., faulty cables, NICs, switches).<br>
+                - Wireless interference or weak signal strength.<br>
+                - DNS resolution issues.
+            </p>
+            <h3>Troubleshooting Tools:</h3>
+            <p>
+                - Ping, traceroute, nslookup, and ipconfig/ifconfig.<br>
+                - Packet sniffers like Wireshark.<br>
+                - Network analyzers to check traffic flow and detect bottlenecks.
+            </p>
+        </section>
+    </div>
+</body>
+</html>
