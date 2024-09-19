@@ -12,10 +12,28 @@
             margin: 0;
             padding: 0;
         }
+        nav {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 10px;
+            color: #00FF00;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         .container {
             width: 80%;
-            margin: 20px auto;
+            margin: 0 auto;
             padding: 10px;
+            padding-top: 80px; /* Adjust according to nav height */
             border: 1px solid #00FF00;
             background-color: #000000;
         }
@@ -37,14 +55,6 @@
         a:hover {
             text-decoration: underline;
         }
-        nav {
-            background-color: black;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 10px;
-        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -58,19 +68,30 @@
         th {
             background-color: #004400;
         }
+        .back-to-top {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .back-to-top a {
+            color: #00FF00;
+            text-decoration: none;
+        }
+        .back-to-top a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#networking-fundamentals">Networking Fundamentals</a>
+        <a href="#network-implementations">Network Implementations</a>
+        <a href="#network-operations">Network Operations</a>
+        <a href="#network-security">Network Security</a>
+        <a href="#network-troubleshooting">Network Troubleshooting</a>
+        <a href="#network-dictionary">Dictionary</a>
+    </nav>
     <div class="container">
-        <h1>CompTIA Network+ Exam Guide</h1>
-        <nav>
-            <a href="#networking-fundamentals">Networking Fundamentals</a>
-            <a href="#network-implementations">Network Implementations</a>
-            <a href="#network-operations">Network Operations</a>
-            <a href="#network-security">Network Security</a>
-            <a href="#network-troubleshooting">Network Troubleshooting</a>
-            <a href="#network-dictionary">Dictionary</a>
-        </nav>
+        <h1 id="top">CompTIA Network+ Exam Guide</h1>
 
         <section id="networking-fundamentals">
             <h2>1. Networking Fundamentals</h2>
@@ -98,6 +119,7 @@
                 - DNS (Domain Name System): Translates domain names into IP addresses.<br>
                 - DHCP (Dynamic Host Configuration Protocol): Automatically assigns IP addresses to devices.
             </p>
+            <div class="back-to-top"><a href="#top">Back to Top</a></div>
         </section>
 
         <section id="network-implementations">
@@ -130,6 +152,7 @@
                 - Connectors (RJ45, SC, LC).<br>
                 - Signal interference and cable management best practices.
             </p>
+            <div class="back-to-top"><a href="#top">Back to Top</a></div>
         </section>
 
         <section id="network-operations">
@@ -154,6 +177,7 @@
                 - Role of SLAs (Service Level Agreements) in setting uptime and performance expectations.<br>
                 - Incident response and change management processes.
             </p>
+            <div class="back-to-top"><a href="#top">Back to Top</a></div>
         </section>
 
         <section id="network-security">
@@ -181,6 +205,7 @@
                 - Malware, DDoS attacks, phishing, and man-in-the-middle attacks.<br>
                 - Mitigation strategies: firewalls, antivirus, patch management.
             </p>
+            <div class="back-to-top"><a href="#top">Back to Top</a></div>
         </section>
 
         <section id="network-troubleshooting">
@@ -202,6 +227,7 @@
                 - Packet sniffers like Wireshark.<br>
                 - Network analyzers to check traffic flow and detect bottlenecks.
             </p>
+            <div class="back-to-top"><a href="#top">Back to Top</a></div>
         </section>
 
         <section id="network-dictionary">
@@ -284,6 +310,7 @@
                     <td>Multi-Factor Authentication: A method of confirming identity by using more than one authentication factor.</td>
                 </tr>
             </table>
+            <div class="back-to-top"><a href="#top">Back to Top</a></div>
         </section>
     </div>
 </body>
